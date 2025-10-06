@@ -112,6 +112,8 @@ quiz-application/
 │   ├── database.js          # Database setup and initialization
 │   ├── routes/
 │   │   └── quiz.js          # Quiz routes
+│   ├── tests/
+│   │   └── quiz.test.js     # Test file (ready for your tests)
 │   ├── server.js            # Express server
 │   ├── quiz.db              # SQLite database (created automatically)
 │   └── package.json
@@ -119,8 +121,15 @@ quiz-application/
 └── frontend/
     ├── src/
     │   ├── components/      # React components
+    │   │   ├── StartPage.jsx
+    │   │   ├── QuizPage.jsx
+    │   │   ├── ResultsPage.jsx
+    │   │   ├── Timer.jsx
+    │   │   └── css/         # Component styles
     │   ├── context/         # Quiz context
+    │   │   └── QuizContext.jsx
     │   ├── services/        # API calls
+    │   │   └── api.js
     │   └── App.jsx
     └── package.json
 ```
@@ -142,5 +151,6 @@ Some ideas if you want to extend this:
 - Leaderboard
 - Better test coverage
 
+---
 
 Feel free to modify and improve this however you want!
