@@ -6,7 +6,7 @@ const StartPage = () => {
   const { startQuiz, loading } = useQuiz();
 
   const handleStart = () => {
-    startQuiz(10); 
+    startQuiz(300); 
   };
 
   return (
@@ -17,7 +17,7 @@ const StartPage = () => {
         <div className="quiz-info">
           <p>Test your knowledge with our interactive quiz</p>
           <ul>
-            <li>10 Seconds Timer</li>
+            <li>5 Minutes Timer</li>
             <li>Navigate between questions</li>
             <li>See detailed results</li>
           </ul>
